@@ -73,6 +73,7 @@ class vehicle_model:
         f,(ax1,ax2) = plt.subplots(1,2,figsize=(16,6))
         ax1.imshow(plt.imread(imagePath))
         ax2.imshow(draw_box(boxes,plt.imread(imagePath),[[0, plt.imread(imagePath).shape[1]], [0, plt.imread(imagePath).shape[0]]]))
+        return draw_box(boxes,plt.imread(imagePath),[[0, plt.imread(imagePath).shape[1]], [0, plt.imread(imagePath).shape[0]]])
     
     def frame_func(self, image):
         crop = image
