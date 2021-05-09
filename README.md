@@ -9,6 +9,9 @@ This project requires Keras 2.0 as well as Tensorflow 1.15.
 
 The Driver program is [Main_Model.py](https://github.com/djbarajas/ML_Final/blob/main/Main_Model.ipynb).  There are 2 pretrained models attatched to this.  A [Traffic Light CLassifier](https://github.com/djbarajas/ML_Final/blob/main/TLClassifier.py) and a [Vehicle Detector](https://github.com/djbarajas/ML_Final/blob/main/vehicle_model.py).  
 
+## Dataset
+
+The dataset used for this project was the [LSIA Traffic Light Dataset](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset).
 
 
 ## Reference
