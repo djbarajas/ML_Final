@@ -53,7 +53,7 @@ def create_model_with_weights():
 
 def predict(model, imagePath):
     image = plt.imread(imagePath)
-    image_crop = image[300:650,500:,:]
+    image_crop = image
     resized = cv2.resize(image_crop,(448,448))
     batch = np.transpose(resized,(2,0,1))
     batch = 2*(batch/255.) - 1
@@ -66,4 +66,4 @@ def predict(model, imagePath):
 def draw_on_image(boxes, imagePath):
     f,(ax1,ax2) = plt.subplots(1,2,figsize=(16,6))
     ax1.imshow(plt.imread(imagePath))
-    ax2.imshow(draw_box(boxes,plt.imread(imagePath),[[500,1280],[300,650]]))
+    ax2.imshow(draw_box(boxes,plt.imread(imagePath),[[0, plt.imread(imagePath).shape[1]], [0, plt.imread(imagePath).shape[0]]]))
