@@ -140,6 +140,6 @@ def draw_box(boxes,im,crop_dim):
         if top   < 0    :   top = 0
         if bot   > h - 1:   bot = h - 1
         thick = int((h + w) // 150)
-        cv2.rectangle(imgcv, (left, top), (right, bot), (255,0,0), thick)
+        cv2.rectangle(imgcv, (left, top), (right, bot), (0,0,255), thick)
 
     return imgcv
